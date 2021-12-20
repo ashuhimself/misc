@@ -1,0 +1,34 @@
+#this programme will find nCr = n!/r!(n-r)!
+#To calculate nCr
+n = int(input("Enter the total number of event from which we have to selct specific event: "))
+r = int(input("Enter the total number of event we have to find out: "))
+x = n-r
+factorial = 1    
+if n < 0:    
+   print("Please inter positive number")    
+elif n == 0:    
+   print("Are you serious?")    
+else:
+   for i in range(1,n + 1):    
+       factorial = factorial*i
+
+factorialr = 1    
+if r < 0:    
+   print("Please enter positive number")    
+elif r == 0:    
+   print("Are you serious?")    
+else:    
+   for i in range(1,r + 1):    
+       factorialr = factorialr*i
+
+factorialx = 1    
+if x < 0:    
+   print("Please enter positive number")    
+elif x == 0:    
+   print("Are you serious?")    
+else:    
+   for i in range(1,x + 1):    
+       factorialx = factorialx*i
+
+t = factorialx*factorialr
+print(factorial/t)
